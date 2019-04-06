@@ -3,7 +3,7 @@ $( document ).ready(function() {
   var at = '\x40';
   var foo = '\x6Dail';
   // Email contact
-  $('a[href*="#"]')
+  $('a.script-ask')
     .each(function () {
       this.href = foo + "to:" + "\x61lsh\x61w" + "296" + at + "g\x6D\x61il.com";
     });
