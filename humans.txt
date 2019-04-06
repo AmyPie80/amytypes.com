@@ -1,0 +1,13 @@
+/* TEAM */
+
+Your title: Amy-Leigh Shaw.
+
+Site: amytypes.com
+
+Twitter: @DiveAmyDive
+
+/* SITE */
+
+Last update: 2019/04/06
+
+Standards: HTML5, CSS3

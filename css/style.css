@@ -1,0 +1,92 @@
+body {
+  background-color: #f6efdd;
+}
+
+h3 {
+  text-align: center;
+  color: #a50909;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+.content p {
+  margin: 0pt 15pt;
+}
+
+nav.menu {
+  margin: 20pt 0pt;
+}
+
+nav.menu ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+nav.menu li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 20px;
+  height: 20px;
+  color: #4b4b50;
+}
+
+nav.menu a {
+  text-decoration: underline;
+  display: block;
+  transition: .3s background-color;
+  color: #4b4b50;
+}
+
+nav.menu a:hover {
+
+}
+
+nav.menu a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+img.logo {
+  width: 50%;
+}
+
+.pure-button-dark {
+  background-color: #4b4b4b;
+  color: #ffffff;
+
+}
+
+.pure-button-dark:hover, .pure-button-dark:visited {
+  color: #ffffff;
+}
+
+.content {
+  display:flex;justify-content:center;align-items:center;
+  flex-direction: column;
+}
+
+img.showcase {
+  margin-top: 10pt;
+  margin-bottom: 10pt;
+}
+
+p.script-metadata {
+  margin-bottom: 20pt;
+}
+
+  nav.menu li {
+    width: 120px;
+    border-bottom: none;
+    height: 30px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  nav.menu  li {
+    display: inline-block;
+  }
