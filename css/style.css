@@ -1,5 +1,5 @@
 body {
-  background-color: #f6efdd;
+  background-color: #ffffff;
 }
 
 h3 {
@@ -26,18 +26,29 @@ nav.menu ul {
   margin: 0;
 }
 nav.menu li {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   line-height: 20px;
-  height: 20px;
-  color: #4b4b50;
+  height: 45px;
+  color: #1d1d1d;
+  width: 200px;
+  line-height: 50px;
+}
+
+nav.menu > ul > li:not(:first-child) {
+  border-left: 2px #1d1d1d solid;
+}
+
+nav.menu li.current a > span {
+  border-bottom: 2px #1d1d1d solid;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 nav.menu a {
-  text-decoration: underline;
   display: block;
   transition: .3s background-color;
-  color: #4b4b50;
+  color: #1d1d1d;
 }
 
 nav.menu a:hover {
@@ -51,7 +62,8 @@ nav.menu a.active {
 }
 
 img.logo {
-  width: 50%;
+  width: 60px;
+  margin-top: -5%;
 }
 
 .pure-button-dark {
@@ -78,15 +90,22 @@ p.script-metadata {
   margin-bottom: 20pt;
 }
 
-  nav.menu li {
-    width: 120px;
-    border-bottom: none;
-    height: 30px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }
- 
   /* Option 1 - Display Inline */
   nav.menu  li {
     display: inline-block;
+    vertical-align: middle;
   }
+
+p.name {
+  font-weight: 400;
+}
+
+p.job {
+  font-weight: 300;
+  font-size: 10pt;
+}
+
+p.job, p.name {
+  margin: 0;
+  margin-top: -15%;
+}

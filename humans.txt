@@ -8,6 +8,6 @@ Twitter: @DiveAmyDive
 
 /* SITE */
 
-Last update: 2019/04/06
+Last update: 2021/03/31
 
 Standards: HTML5, CSS3
