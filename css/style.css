@@ -133,10 +133,34 @@ p.job, p.name {
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .carousel, .grid {
+    margin-top: 20pt;
+  }
+
+  nav.menu > ul > li.logo {
+    position: absolute;
+    top: 30pt;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: none;
+    right: 0;
+    width: 100%;
+  }
+
+  nav.menu {
+    padding-top: 80pt;
+  }
+
+  nav.menu li:not(.logo) {
+    width: 22%;
+    font-size: 0.8em;
   }
 }
 
