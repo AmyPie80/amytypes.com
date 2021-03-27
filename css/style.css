@@ -155,7 +155,7 @@ p.job, p.name {
   }
 
   nav.menu {
-    padding-top: 80pt;
+    padding-top: 75pt;
   }
 
   nav.menu li:not(.logo) {
@@ -164,24 +164,24 @@ p.job, p.name {
   }
 
   .carousel .title {
-    font-size: 12pt !important;
+    font-size: 10pt !important;
   }
 
   .carousel .subtitle {
-    font-size: 12pt !important;
-    bottom: 45pt;
+    font-size: 10pt !important;
   }
 }
 
 @media screen and (max-width: 1000px) {
 
   .carousel .title {
-    font-size: 15pt !important;
+    font-size: 10pt !important;
+    bottom: 25pt !important;
   }
 
   .carousel .subtitle {
-    font-size: 15pt !important;
-    bottom: 45pt !important;
+    font-size: 10pt !important;
+    bottom: 15pt !important;
   }
 }
 
@@ -275,14 +275,14 @@ p.job, p.name {
 
 .grid > div:hover > .title {
   transition: bottom 0.5s linear;
-  top: 0pt;
+  top: 10pt;
   bottom: 0pt;
 }
 
 .grid > div:hover > .subtitle {
   transition: top 0.5s linear;
   transition: bottom 0.5s linear;
-  top: 20pt;
+  top: 30pt;
   bottom: 0pt;
 }
 
