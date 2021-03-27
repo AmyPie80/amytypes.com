@@ -162,6 +162,27 @@ p.job, p.name {
     width: 22%;
     font-size: 0.8em;
   }
+
+  .carousel .title {
+    font-size: 12pt !important;
+  }
+
+  .carousel .subtitle {
+    font-size: 12pt !important;
+    bottom: 45pt;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .carousel .title {
+    font-size: 15pt !important;
+  }
+
+  .carousel .subtitle {
+    font-size: 15pt !important;
+    bottom: 45pt !important;
+  }
 }
 
 .grid > div {
