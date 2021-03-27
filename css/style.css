@@ -133,7 +133,7 @@ p.job, p.name {
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 650px) {
 
   .grid {
     grid-template-columns: 1fr;
