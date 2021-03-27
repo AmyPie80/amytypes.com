@@ -19,6 +19,7 @@ p.italic {
 
 nav.menu {
   margin: 20pt 0pt;
+  margin-top: 35pt;
 }
 
 nav.menu ul {
@@ -38,11 +39,11 @@ nav.menu li {
 }
 
 nav.menu > ul > li:not(:first-child) {
-  border-left: 2px #1d1d1d solid;
+  border-left: 1px #1d1d1d solid;
 }
 
 nav.menu li.current a > span {
-  border-bottom: 2px #1d1d1d solid;
+  border-bottom: 1px #1d1d1d solid;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -64,8 +65,8 @@ nav.menu a.active {
 }
 
 img.logo {
-  width: 60px;
-  margin-top: -5%;
+  width: 70px;
+  margin-top: -15pt;
 }
 
 .pure-button-dark {
@@ -96,6 +97,11 @@ p.script-metadata {
   nav.menu  li {
     display: inline-block;
     vertical-align: middle;
+    font-weight: 300;
+  }
+
+  nav.menu li > a {
+    text-transform: uppercase;
   }
 
 p.name {
@@ -105,6 +111,8 @@ p.name {
 p.job {
   font-weight: 300;
   font-size: 10pt;
+  text-transform: initial;
+  margin-top: -18% !important;
 }
 
 p.job, p.name {
@@ -134,23 +142,45 @@ p.job, p.name {
   width: 100%;
 }
 
-.carousel .title, .grid .title {
+.grid .title {
   position: absolute;
-  bottom: 70pt;
-  left: 50pt;
+  bottom: 25pt;
+  left: 20pt;
   color: #fff;
-  font-weight: 600;
-  font-size: 30pt;
+  font-weight: 800;
+  font-size: 20pt;
+  text-transform: uppercase;
 }
 
-.carousel .subtitle, .grid .subtitle {
+.grid .subtitle {
   position: absolute;
-  bottom: 50pt;
-  left: 80pt;
+  bottom: 8pt;
+  left: 40pt;
   color: #fff;
   font-weight: 400;
   font-size: 20pt;
 }
+
+
+.carousel .title {
+  position: absolute;
+  bottom: 60pt;
+  left: 20pt;
+  color: #fff;
+  font-weight: 800;
+  font-size: 30pt;
+  text-transform: uppercase;
+}
+
+.carousel .subtitle {
+  position: absolute;
+  bottom: 30pt;
+  left: 40pt;
+  color: #fff;
+  font-weight: 400;
+  font-size: 30pt;
+}
+
 
 .infobox {
   position: absolute;
@@ -161,6 +191,7 @@ p.job, p.name {
   transition: visibility 0s, opacity 0.5s linear;
   opacity: 0;
   visibility: hidden;
+  padding-top: 5pt;
 }
 
 .grid > div:hover > .infobox {
@@ -169,24 +200,34 @@ p.job, p.name {
 }
 
 .infobox > p:first-child {
-  font-weight: 600;
+  font-weight: 800;
 }
 
-.infobox > span {
+.infobox p {
+  margin: 0;
+}
+
+.infobox > a {
   float: right;
   border-bottom: 1px solid white;
+  padding-top: 10pt;
+  color: white;
+}
+
+.infobox > p.logline {
+  text-indent: 10pt;
 }
 
 .grid > div:hover > .title {
   transition: bottom 0.5s linear;
-  top: 20pt;
+  top: 0pt;
   bottom: 0pt;
 }
 
 .grid > div:hover > .subtitle {
   transition: top 0.5s linear;
   transition: bottom 0.5s linear;
-  top: 50pt;
+  top: 20pt;
   bottom: 0pt;
 }
 
@@ -273,14 +314,14 @@ button.slick-arrow {
     content: '•';
     text-align: center;
 
-    opacity: .25;
-    color: black;
+    opacity: .50;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+  opacity: 1.0;
+  color: white;
 }
