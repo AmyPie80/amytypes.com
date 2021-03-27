@@ -185,7 +185,7 @@ p.job, p.name {
   }
 }
 
-.grid > div {
+.grid > div, .carousel > div {
   position: relative;
 }
 
