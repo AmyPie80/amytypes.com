@@ -1,6 +1,6 @@
 body {
   background-color: #ffffff;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -112,31 +112,85 @@ p.job, p.name {
   margin-top: -15%;
 }
 
-.carousel {
+.carousel, .grid {
   margin-top: 8%;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+.grid > div {
+  position: relative;
+}
+
+.grid img {
+  width: 100%;
 }
 
 .carousel img {
   width: 100%;
 }
 
-.carousel .title {
+.carousel .title, .grid .title {
   position: absolute;
   bottom: 70pt;
-  left: 60pt;
+  left: 50pt;
   color: #fff;
   font-weight: 600;
   font-size: 30pt;
 }
 
-.carousel .subtitle {
+.carousel .subtitle, .grid .subtitle {
   position: absolute;
   bottom: 50pt;
-  left: 90pt;
+  left: 80pt;
   color: #fff;
   font-weight: 400;
   font-size: 20pt;
 }
+
+.infobox {
+  position: absolute;
+  bottom: 5pt;
+  padding: 15pt;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  transition: visibility 0s, opacity 0.5s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.grid > div:hover > .infobox {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.infobox > p:first-child {
+  font-weight: 600;
+}
+
+.infobox > span {
+  float: right;
+  border-bottom: 1px solid white;
+}
+
+.grid > div:hover > .title {
+  transition: bottom 0.5s linear;
+  top: 20pt;
+  bottom: 0pt;
+}
+
+.grid > div:hover > .subtitle {
+  transition: top 0.5s linear;
+  transition: bottom 0.5s linear;
+  top: 50pt;
+  bottom: 0pt;
+}
+
+/* ! - Slick Theme - ! */
 
 button.slick-arrow {
   display: none !important;
