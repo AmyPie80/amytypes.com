@@ -36,6 +36,7 @@ nav.menu li {
   color: #1d1d1d;
   width: 200px;
   line-height: 50px;
+  width: 18%;
 }
 
 nav.menu > ul > li:not(:first-child) {
@@ -99,7 +100,9 @@ p.script-metadata {
     vertical-align: middle;
     font-weight: 300;
   }
-
+  a {
+    text-decoration: none;
+  }
   nav.menu li > a {
     text-transform: uppercase;
   }
@@ -112,12 +115,12 @@ p.job {
   font-weight: 300;
   font-size: 10pt;
   text-transform: initial;
-  margin-top: -18% !important;
+  margin-top: -27pt !important;
 }
 
 p.job, p.name {
   margin: 0;
-  margin-top: -15%;
+  margin-top: -20pt;
 }
 
 .carousel, .grid {
@@ -128,6 +131,13 @@ p.job, p.name {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+@media screen and (max-width: 600px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid > div {
