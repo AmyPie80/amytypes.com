@@ -132,7 +132,11 @@ p.job, p.name {
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
 }
-
+@media screen and (min-width: 2000px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+  }
+}
 @media screen and (max-width: 650px) {
 
   .grid {
